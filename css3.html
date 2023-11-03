@@ -4,12 +4,28 @@
   <meta charset="utf-8" />
   <title>Ejercicio posicionamiento</title>
   <style type="text/css">
+    span.anterior{
+      position: relative;
+    right: auto;
+    }
+
+    span.siguiente{
+      position: sticky;
+      left: 100%;
+    }
+
+    div{
+      background-color: lightgrey;
+      padding: 7px;
+    }
   </style>
 </head>
  
 <body>
   <div>
-    &laquo; Anterior &nbsp; Siguiente &raquo;
+    <span class="anterior">&laquo; Anterior</span>
+     &nbsp; 
+     <span class="siguiente">Siguiente &raquo;</span>
   </div>
 </body>
 </html>
